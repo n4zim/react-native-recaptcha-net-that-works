@@ -28,8 +28,8 @@ const getTemplate = (params, enterprise) => {
         : 'window.grecaptcha';
 
     const jsScript = enterprise
-        ? '<script src="https://www.google.com/recaptcha/enterprise.js?hl={{lang}}" async defer></script>'
-        : '<script src="https://www.google.com/recaptcha/api.js?hl={{lang}}" async defer></script>'
+        ? '<script src="https://www.recaptcha.net/recaptcha/enterprise.js?hl={{lang}}" async defer></script>'
+        : '<script src="https://www.recaptcha.net/recaptcha/api.js?hl={{lang}}" async defer></script>'
 
     let template = `
     <!DOCTYPE html>
@@ -40,7 +40,7 @@ const getTemplate = (params, enterprise) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
 
-        <link rel="preconnect" href="https://www.google.com">
+        <link rel="preconnect" href="https://www.recaptcha.net">
         <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
 
         ${jsScript}
@@ -95,7 +95,7 @@ const getTemplate = (params, enterprise) => {
                 const iframes = document.getElementsByTagName('iframe');
 
                 const recaptchaFrame = Array.prototype.find
-                    .call(iframes, e => e.src.includes('google.com/recaptcha/api2/bframe'));
+                    .call(iframes, e => e.src.includes('recaptcha.net/recaptcha/api2/bframe'));
                 const recaptchaElement = recaptchaFrame.parentNode.parentNode;
 
                 clearInterval(onCloseInterval);
