@@ -7,7 +7,7 @@
   "description": "⚛ A reCAPTCHA bridge for React Native that works.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/douglasjunior/react-native-recaptcha-that-works.git"
+    "url": "https://github.com/n4zim/react-native-recaptcha-net-that-works.git"
   },
   "main": "index.js",
   "types": "index.d.ts",
@@ -23,9 +23,9 @@
     "url": "http://smarppy.com"
   },
   "bugs": {
-    "url": "https://github.com/douglasjunior/react-native-recaptcha-that-works/issues"
+    "url": "https://github.com/n4zim/react-native-recaptcha-net-that-works/issues"
   },
-  "homepage": "https://github.com/douglasjunior/react-native-recaptcha-that-works",
+  "homepage": "https://github.com/n4zim/react-native-recaptcha-net-that-works",
   "peerDependencies": {
     "react": ">=16.9.0",
     "react-native": ">=0.60.0",
